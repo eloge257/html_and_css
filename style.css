@@ -1,8 +1,9 @@
 p {
-  animation-duration: 3s;
-  animation-delay: 30s;
+  /* animation-duration: 3s; */
+  animation-delay: 1s;
   animation-name: glissement;
   animation-iteration-count: infinite;
+  animation-direction: alternate
 }
 @keyframes glissement {
   from {
