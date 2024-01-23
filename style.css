@@ -1,3 +1,39 @@
-h1+p{
-  color: aqua;
+span[lang="en"] {
+  color: green;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+a {
+  color: blue;
+}
+
+/* Liens internes commençant avec "#" */
+a[href^="#"] {
+  background-color: gold;
+}
+
+/* Liens avec "example" n'importe où dans l'URL */
+a[href*="example"] {
+  background-color: silver;
+}
+
+/* Liens avec "insensitive" n'importe où dans l'URL,
+   quelle que soit la casse */
+a[href*="insensitive" i] {
+  color: cyan;
+}
+
+/* Liens avec "cAsE" n'importe où dans l'URL,
+   et avec cette casse donnée.*/
+a[href*="cAsE" s] {
+  color: pink;
+}
+
+/* Liens qui finissent ".org" */
+a[href$=".org"] {
+  color: red;
+}
+h1[class="article"]{
+  color: brown;
 }
