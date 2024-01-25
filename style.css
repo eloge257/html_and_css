@@ -3,6 +3,13 @@
   padding: 0;
 }
 
+.card{
+  background-color: whitesmoke;
+  margin: 50px;
+}
+
 b{
-  color:violet
+  color:violet;
+  font-size: 35px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
