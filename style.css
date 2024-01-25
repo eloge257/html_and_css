@@ -8,8 +8,15 @@
   margin: 50px;
 }
 
-b{
+.title {
+  text-align: center;
   color:violet;
   font-size: 35px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
 }
+.p-title{
+  font-weight: bolder;
+  text-align: center;
+}
+
