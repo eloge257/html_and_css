@@ -11,6 +11,7 @@
   width: 10vw;
   height: 7vw;
   margin: 10px;
+position: relative;
 }
 
 /* center */
@@ -19,7 +20,7 @@
   flex-wrap: wrap;
   align-content: space-around;
   justify-content: center;
-}
+} 
 
 /* flex-end */
 .flex-end{
@@ -29,8 +30,14 @@
   justify-content: flex-end;
 }
 
-.item:hover{
-  background-color: #5b0742;
-  /* transition-delay: 1s; */
+/*  */
+.item:hover::after{
+  content: ""; /* Ajoute le pseudo-élément */
+  position: absolute; /* Positionne le pseudo-élément par rapport à l'élément parent */
+  left: 0; /* Positionne le pseudo-élément à gauche */
+  bottom: 0; /* Positionne le pseudo-élément en bas */
+  width: 100%; /* Largeur du pseudo-élément (ligne horizontale) */
+  height: 20px; /* Hauteur du pseudo-élément (ligne horizontale) */
+  background-color: yellow; /* Couleur de la ligne horizontale */
   transition-duration: 1s;
 }
