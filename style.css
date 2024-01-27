@@ -2,12 +2,21 @@
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
+  justify-content: start;
   
 }
 
 .item{
   background-color: #ef06a9;
   width: 10vw;
-  height: 15vw;
+  height: 7vw;
   margin: 10px;
+}
+
+/* center */
+.center{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
 }
