@@ -26,3 +26,16 @@
   margin-left:30vw;
 
 }
+
+.list_one {
+ font-size: x-large;
+}
+
+.content_frontend{
+  align-content:flex-end;
+}
+.content{
+  width: 30vw;
+  flex-direction:column;
+  align-content: flex-start;
+}
