@@ -20,3 +20,17 @@
   align-content: space-around;
   justify-content: center;
 }
+
+/* flex-end */
+.flex-end{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: flex-end;
+}
+
+.item:hover{
+  background-color: #5b0742;
+  /* transition-delay: 1s; */
+  transition-duration: 1s;
+}
