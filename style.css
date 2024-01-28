@@ -106,16 +106,20 @@ position: relative;
 }
 
 /* nav */
-
+/* nav{
+  
+} */
 
 nav .item-menu{
   display: flex;
   justify-content: flex-end;
 
 }
+.item-icon{
+ margin-top: 100px;
+}
 .item-nav{
   margin-right: 5vw;
-  margin-top: 1vw;
   text-decoration: none;
   color: #ef06a9;
   font-size: large;
