@@ -41,3 +41,66 @@ position: relative;
   background-color: yellow; /* Couleur de la ligne horizontale */
   transition-duration: 1s;
 }
+
+
+
+.typewriter h1 {
+  overflow: hidden; /* Cache le texte qui dépasse la taille du conteneur */
+  border-right: 0.15em solid orange; /* Ajoute un effet de curseur */
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  font-size: 24px;
+  font-family: "Arial", sans-serif;
+  animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0; /* Commence avec une largeur nulle */
+  }
+  to {
+    width: 10%; /* Atteint la largeur totale du texte */
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent; /* Cache le curseur */
+  }
+  50% {
+    border-color: orange; /* Affiche le curseur */
+  }
+}
+
+.typewriter h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 24px;
+  font-family: "Arial", sans-serif;
+  animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+#counter {
+  font-size: 24px;
+  font-family: "Arial", sans-serif;
+}

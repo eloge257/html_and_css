@@ -26,5 +26,60 @@
       <div class="item">Item 2</div>
       <div class="item">Item 3</div>
    </div>
+
+   <div class="typewriter">
+    <h1><span id="text"></span></h1>
+  </div>
+  <div id="counter">0</div>
 </body>
 </html>
+<script>
+  const texts = ["I'm Eloge developer", "Developer - Mobile and Web"];
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+function type() {
+  if (count === texts.length) {
+    count = 0;
+  }
+  currentText = texts[count];
+  letter = currentText.slice(0, ++index);
+
+  document.getElementById("text").textContent = letter;
+  if (letter.length === currentText.length) {
+    count++;
+    index = 0;
+  }
+  setTimeout(type, 200);
+}
+
+type();
+</script>
+
+<script>
+  const counterElement = document.getElementById("counter");
+const targetNumber = 2; // Le nombre jusqu'auquel les chiffres vont compter
+const duration = 2000; // La durée totale de l'animation en millisecondes
+const interval = 10; // L'intervalle entre chaque mise à jour du chiffre en millisecondes
+const steps = targetNumber / (duration / interval);
+let currentNumber = 0;
+
+function count() {
+  if (currentNumber >= targetNumber) {
+    counterElement.textContent = targetNumber;
+    return;
+  }
+
+  currentNumber += steps;
+  if (currentNumber > targetNumber) {
+    currentNumber = targetNumber;
+  }
+
+  counterElement.textContent = Math.round(currentNumber);
+  setTimeout(count, interval);
+}
+
+count();
+</script>
