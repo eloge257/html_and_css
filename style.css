@@ -113,3 +113,11 @@ nav {
   align-content: space-between;
   justify-content: flex-end;
 }
+.item-nav{
+  margin-right: 5vw;
+  margin-top: 1vw;
+  text-decoration: none;
+  color: #ef06a9;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
