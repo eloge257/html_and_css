@@ -156,5 +156,9 @@ nav {
 }
 .item-menu{
   margin-top: 20px;
-
+}
+/* picture */
+.content{
+  display: flex;
+  justify-content: space-between;
 }
