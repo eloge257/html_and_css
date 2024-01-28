@@ -109,15 +109,32 @@ position: relative;
 /* nav{
   
 } */
+body{
+  margin: 0;
+  padding: 0;
+}
 
-nav .item-menu{
+nav {
   display: flex;
-  justify-content: flex-end;
-
+  justify-content: space-between;
+  background-color: #8d8a8c;
 }
 .item-icon{
- margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
 }
+.profile-nom{
+  margin-top: 25px;
+  margin-left: 20px;
+}
+.profile{
+  width: 60px;
+  height: 60px;
+  border-color: 20px solid #ef06a9;
+  border-radius: 50px;
+
+}
+
 .item-nav{
   margin-right: 5vw;
   text-decoration: none;
