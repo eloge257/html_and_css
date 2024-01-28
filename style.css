@@ -175,20 +175,34 @@ nav {
   height: 30vw;
   margin-right: 40px;
   margin-top: 30px;
+  border: 2px solid #ef06a9;
+  border-radius: 7px;
 }
 
 
 .content-picture {
   margin-left: 20px; /* Espacement entre le texte et l'image */
 }
+.bar {
+  display: none;
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+}
 
 /* Media Query pour les écrans de taille inférieure à 768px (mobile) */
 @media (max-width: 767px) {
-  .item-menu {
-    flex-direction: column;
-   
+  .bar {
+    display: block;
   }
-
+  .item-icon{
+     display: none;
+  }
+  .item-menu{
+    display: none;
+    margin-right: 60px;
+  }
   .content {
     flex-direction: column;
   }
@@ -202,10 +216,11 @@ nav {
     margin-left: 50px;
     /* margin-right: 30px; */
   }
-  
-
   .content-picture {
     margin-left: 0; /* Supprime l'espacement entre le texte et l'image */
     margin-top: 0; /* Espacement entre le texte et l'image en mode mobile */
+  }
+  .hamburger-menu{
+    margin-right: auto;
   }
 }
