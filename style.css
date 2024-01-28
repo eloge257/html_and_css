@@ -114,10 +114,13 @@ body{
   padding: 0;
 }
 
-nav {
+.nav-web {
   display: flex;
   justify-content: space-between;
   /* background-color: #8d8a8c; */
+}
+.nav-mobile{
+  display: none;
 }
 .item-icon{
   display: flex;
@@ -196,18 +199,37 @@ nav {
 
 /* Media Query pour les écrans de taille inférieure à 768px (mobile) */
 @media (max-width: 767px) {
+  .nav-web {
+    display: none;
+  }
+  .nav-mobile{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+  }
   .bar {
     display: block;
   }
   .item-icon{
      display: none;
   }
-  .item-menu{
-     display: flex;
-    flex-direction: column;
-    /* flex-direction: column; */
-    /* margin-right: 60px; */
+  .item-menu-mobile{
+    display: flex;
+   flex-direction: column;
   }
+  .item-all-nav{
+    display: none; 
+   flex-direction: column;
+
+
+  }
+  .item-nav-mobile{
+    color: #ef06a9;
+    text-decoration: none;
+    margin: 20px;
+  }
+  
+ 
   .content {
     flex-direction: column;
   }
