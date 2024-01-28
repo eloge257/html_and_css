@@ -107,11 +107,11 @@ position: relative;
 
 /* nav */
 
-nav {
+
+nav .item-menu{
   display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
   justify-content: flex-end;
+
 }
 .item-nav{
   margin-right: 5vw;
