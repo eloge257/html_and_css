@@ -196,10 +196,6 @@ nav {
 
 /* Media Query pour les écrans de taille inférieure à 768px (mobile) */
 @media (max-width: 767px) {
-  nav{
-    display: inline;
-    flex-wrap: wrap;
-  }
   .bar {
     display: block;
   }
@@ -207,8 +203,8 @@ nav {
      display: none;
   }
   .item-menu{
-    display: none;
-    background-color: aqua;
+     display: flex;
+    flex-direction: column;
     /* flex-direction: column; */
     /* margin-right: 60px; */
   }
