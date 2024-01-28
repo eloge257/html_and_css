@@ -117,7 +117,7 @@ body{
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: #8d8a8c;
+  /* background-color: #8d8a8c; */
 }
 .item-icon{
   display: flex;
@@ -160,5 +160,17 @@ nav {
 /* picture */
 .content{
   display: flex;
+  /* flex-wrap:wrap-reverse; */
   justify-content: space-between;
+}
+
+.content-text{
+  width: 50%;
+  margin: 45px;
+}
+
+.content-descrp{
+  width: 25vw;
+  height: 30vw;
+  margin-right: 30px;
 }
