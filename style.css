@@ -158,19 +158,54 @@ nav {
   margin-top: 20px;
 }
 /* picture */
-.content{
+/* .content{
   display: flex;
-  /* flex-wrap:wrap-reverse; */
+  flex-wrap:wrap-reverse;
   justify-content: space-between;
 }
 
-.content-text{
-  width: 50%;
+
+ */
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.content-text {
+  flex-grow: 1;
+  width: 45%;
   margin: 45px;
 }
 
 .content-descrp{
   width: 25vw;
   height: 30vw;
-  margin-right: 30px;
+  margin-right: 40px;
+  margin-top: 30px;
+}
+
+
+.content-picture {
+  margin-left: 20px; /* Espacement entre le texte et l'image */
+}
+
+/* Media Query pour les écrans de taille inférieure à 768px (mobile) */
+@media (max-width: 767px) {
+
+  .content {
+    flex-direction: column;
+  }
+  .content-descrp{
+    width: 65vw;
+    height: 50vw;
+    margin-left: 50px;
+    /* margin-right: 30px; */
+  }
+  
+
+  .content-picture {
+    margin-left: 0; /* Supprime l'espacement entre le texte et l'image */
+    margin-top: 20px; /* Espacement entre le texte et l'image en mode mobile */
+  }
 }
