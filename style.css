@@ -128,8 +128,10 @@ nav {
 .profile-nom{
   margin-top: 10px;
   margin-left: 10px;
-  font-family:cursive;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
+
 .profile{
   margin-top: -6px;
   margin-bottom: 3px;
@@ -137,7 +139,6 @@ nav {
   height: 50px;
   border: 2px solid #ef06a9;
   border-radius: 50px;
-
 }
 
 .item-nav{
@@ -146,6 +147,12 @@ nav {
   color: #ef06a9;
   font-size: large;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.item-nav:hover{
+  text-decoration: underline;
+  color: rgb(183, 255, 0);
+  transition-delay: 1s;
 }
 .item-menu{
   margin-top: 20px;
