@@ -36,10 +36,10 @@
     <!-- content element -->
     <div class="content">
         <div class="content-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, recusandae 
-            omnis illum molestias placeat, doloremque perspiciatis 
-            odit distinctio blanditiis ad explicabo molestiae sapiente iure, consequuntur
-             nam pariatur numquam consequatur ducimus?
+             <!-- I'm Eloge NIREMA  (Eloge257)
+             I'm Fullstack developer -->
+             <h1> I'm Eloge NIREMA  (Eloge257) </h1>
+             <h4><span id="text"></span></h4>
         </div>
         <div class="content-picture">
             <img src="profile.png" alt="" srcset=""  class="content-descrp">
@@ -47,3 +47,39 @@
     </div>
 </body>
 </html>
+<script>
+    const texts = ["", "A Fullstack developer "];
+  let count = 0;
+  let index = 0;
+  let currentText = "";
+  let letter = "";
+  
+  function type() {
+    if (count === texts.length) {
+      count = 0;
+    }
+    currentText = texts[count];
+    letter = currentText.slice(0, ++index);
+  
+    document.getElementById("text").textContent = letter;
+    if (letter.length === currentText.length) {
+      count++;
+      index = 0;
+    }
+    setTimeout(type, 300);
+  }
+  
+  type();
+  </script>
+
+  <script>
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const itemMenu = document.querySelector('.item-menu');
+    const bar = document.querySelector(".bar");
+
+
+    hamburgerMenu.addEventListener('click', () => {
+    itemMenu.style.display = "block";
+    hamburgerMenu.style.display="none"
+    });
+  </script>

@@ -168,6 +168,9 @@ nav {
   flex-grow: 1;
   width: 30%;
   margin: 45px;
+  margin-top: 10vw;
+  font-size: 20px;
+  color: #ef06a9;
 }
 
 .content-descrp{
@@ -193,6 +196,10 @@ nav {
 
 /* Media Query pour les écrans de taille inférieure à 768px (mobile) */
 @media (max-width: 767px) {
+  nav{
+    display: inline;
+    flex-wrap: wrap;
+  }
   .bar {
     display: block;
   }
@@ -201,7 +208,9 @@ nav {
   }
   .item-menu{
     display: none;
-    margin-right: 60px;
+    background-color: aqua;
+    /* flex-direction: column; */
+    /* margin-right: 60px; */
   }
   .content {
     flex-direction: column;
@@ -221,6 +230,8 @@ nav {
     margin-top: 0; /* Espacement entre le texte et l'image en mode mobile */
   }
   .hamburger-menu{
-    margin-right: auto;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 20px;
   }
 }
