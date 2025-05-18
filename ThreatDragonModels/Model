@@ -1,0 +1,31 @@
+{
+  "version": "2.4.1",
+  "summary": {
+    "title": "Model#1",
+    "owner": "eloge257",
+    "description": "high level",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "eloge257"
+      }
+    ],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Diagramm 1",
+        "diagramType": "CIA",
+        "placeholder": "New CIA diagram description",
+        "thumbnail": "./public/content/images/thumbnail.cia.jpg",
+        "version": "2.4.1",
+        "cells": [],
+        "description": "voici la description"
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "Reviewer",
+    "threatTop": 0
+  }
+}
