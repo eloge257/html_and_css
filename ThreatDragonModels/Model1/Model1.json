@@ -1,0 +1,31 @@
+{
+  "version": "2.4.1",
+  "summary": {
+    "title": "Model1",
+    "owner": "eloge257",
+    "description": "High level",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "eloge"
+      }
+    ],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "new diagramm",
+        "diagramType": "Generic",
+        "placeholder": "New generic diagram description",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "version": "2.4.1",
+        "cells": [],
+        "description": "geneiric"
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "Paolo",
+    "threatTop": 0
+  }
+}
